@@ -1,38 +1,260 @@
+:root {
+  --yellow: #F4CE14;
+  --green: #495E57;
+  --grey: #333333;
+  --light-color: #EDEFEE;
+  --font-family-markazi: 'Markazi Text', serif;
+  --font-family-inter: 'Inter';
+  --font-family-roboto: 'Roboto';
+  --font-family-karla: 'Karla';
+  --font-family-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .App {
+  text-align: center;
+  display: inline-flex;
+  max-width: 1200px;
+}
+
+#heroSectiondiv {
+  display: flex;
+  background-color: var(--green);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 420px;
+}
+
+#heroSectiondiv #mainLeftSection, #mainRightSection {
+  padding: 20px;
+  flex: 1;
+}
+
+#heroSectiondiv #mainLeftSection {
+  flex:1;
+  padding: 20px;
+  font-family: var(--font-family-markazi);
+  font-weight: 300;
+  margin-left: 20%;
+  float: left;
+}
+
+#heroSectiondiv button {
+  background-color: var(--yellow);
+  color: var(--grey);
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: none;
+  border: none;
+  font-family: var(--font-family-secondary);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#heroSectiondiv #mainLeftSection h3{
+  margin-top: 0%;
+  font-weight: 500;
+  color: var(--yellow);
+  font-size: 64px;
+  font-family: var(--font-family-markazi);
+  margin-bottom: 0px;
+}
+
+#heroSectiondiv #mainLeftSection h4 {
+  margin-top: -25px;
+  color: var(--light-color);
+  font-size: 40px;
+  font-weight: 100;
+  font-family: var(--font-family-markazi);
+  margin-bottom: 0px;
+}
+
+#heroSectiondiv #mainLeftSection p {
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 100;
+  font-family: var(--font-family-roboto);
+  justify-content: left;
+  overflow-wrap: break-word;
+  width: 45%;
+  margin-top: 1px;
+}
+
+#heroSectiondiv #mainRightSection img {
+  margin-top: 20%;
+  max-width: 375px;
+  max-height: 425px;
+  justify-content: center;
+  align-items: end;
+  float: right;
+  margin-right: 55%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.highlights, .specialsTabs {
+  display: flex;
+  width: 100%;
+}
+
+.specialsTabs {
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.ratings {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.testimonialsText {
+  font-family: var(--font-family-karla);
+  font-weight: 500;
+  font-size: 36px;
+  padding-top: 110px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonials {
+  height: 500px;
+  background-color: var(--green);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#aboutSectionDiv {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 700px;
+  position: relative;
+}
+
+#aboutSectionDiv #aboutSectionLeft, #aboutRightSection {
+  padding: 20px;
+  flex: 1;
+  margin: 0 auto;
+}
+
+#aboutSectionDiv #aboutSectionLeft {
+  font-family: var(--font-family-markazi);
+  font-weight: 300;
+  margin-left: 20%;
+  float: left;
+}
+
+#aboutSectionDiv #aboutSectionLeft h3{
+  margin-top: 0%;
+  font-weight: 500;
+  color: var(--yellow);
+  font-size: 64px;
+  font-family: var(--font-family-markazi);
+  margin-bottom: 0px;
+}
+
+#aboutSectionDiv #aboutSectionLeft h4 {
+  margin-top: -25px;
+  color: var(--green);
+  font-size: 40px;
+  font-weight: 100;
+  font-family: var(--font-family-markazi);
+  margin-bottom: 0px;
+}
+
+#aboutSectionDiv #aboutSectionLeft p {
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-family-roboto);
+  justify-content: left;
+  overflow-wrap: break-word;
+  width: 20%;
+  margin-top: 1px;
+}
+
+#aboutSectionRight{
+  position: absolute;
+  right: 10em;
+  top: 20em;
+  transform: translateY(-50%);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+#aboutSectionDiv #aboutSectionRight .pic1 {
+  width: 272px;
+  height: 338px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  top: -70px;
+  right: 150px;
+  object-position: bottom 12px right -35px;
+}
+
+#aboutSectionDiv #aboutSectionRight .pic2 {
+  width: 272px;
+  height: 338px;
+  object-fit: cover;
+  position: absolute;
+  top: 100px;
+  left: -360px;
+  z-index: 1;
+  object-position: bottom 12px right -35px;
+}
+
+#footerNavigation{
+  width: 100%;
+  display: flex;
+  background-color: var(--yellow);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+#footerNavigation #leftPart img {
+  width: 226px;
+  height: 318px;
+  object-fit: cover;
+  padding: 40px;
+  margin-left: 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footerNavigation #doormatNavigation h3, #contact h3, #socialMediaLinks h3 {
+  margin-top: 60px;
+   font-family: var(--font-family-inter);
+   font-weight: 600;
+   font-size: 18px;
+   align-items: left;
+   margin-left: 10px;
+   margin-bottom: 0px;
 }
+
+#footerNavigation #doormatNavigation ul, #contact ul, #socialMediaLinks ul {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: left;
+    align-items: left;
+    list-style-type: none;
+    margin-top: 0.5em;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    font-size: 20px;
+    height: 30px;
+
+}
+
+#footerNavigation #doormatNavigation a, #contact a, #socialMediaLinks a {
+    text-decoration: none;
+    font-family: var(--font-family-inter);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--grey);
+}
+/* } */

@@ -1,0 +1,113 @@
+:root {
+  --yellow: #F4CE14;
+  --green: #495E57;
+  --grey: #333333;
+  --orange: #E88510;
+  --light-color: #EDEFEE;
+  --font-family-markazi: 'Markazi Text', serif;
+  --font-family-inter: 'Inter';
+  --font-family-roboto: 'Roboto';
+  --font-family-karla: 'Karla';
+  --font-family-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section .specials{
+    background-color: var(--yellow);
+    margin: 0 auto;
+    width: 280px;
+    height: 406px;
+    justify-content: left;
+    align-items: end;
+    margin: 30px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+section .specials h5{
+    margin-top: 10px;
+    font-family: var(--font-family-markazi);
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 20px;
+    float: left;
+    margin-bottom: 0px;
+}
+
+section .specials h6{
+    margin-top: 10px;
+    font-family: var(--font-family-karla);
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 20px;
+    float: right;
+    color: var(--orange);
+}
+
+section .specials p{
+    font-family: var(--font-family-karla);
+    font-weight: 300;
+    font-size: 16px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    color: var(--green);
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+#foodimg {
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    width: 100%;
+    height: 170px;
+}
+
+button img{
+    width: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#orderDeliveryButton {
+    margin-left: 15px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: 'Karla';
+    font-weight: 700;
+    box-shadow: none;
+    border: none;
+    background-color: var(--yellow);
+    color: var(--grey);
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    align-self: center;
+    font-weight: 700;
+}
+
+.highlights #onlineMenu {
+    background-color: var(--yellow);
+    color: var(--grey);
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    font-family: var(--font-family-secondary);
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20%;
+}
+
+.highlights h2{
+    margin-left: 20%;
+    font-family: var(--font-family-karla);
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.highlights {
+    margin-top: 80px;
+    align-items: center;
+}
