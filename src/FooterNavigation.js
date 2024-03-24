@@ -16,7 +16,7 @@ function FooterNavigation() {
                             <li><Link to="/about" id='aboutLink'>About</Link></li>
                             <li><Link to="/menu" id='menuLink'>Menu</Link></li>
                             <li><Link to="/reservations" id='reservationsLink'>Reservations</Link></li>
-                            <li><Link to="/orderOnline" id='orderOnlineLink'>Order online</Link></li>
+                            <li><Link to="/delivery" id='orderOnlineLink'>Order online</Link></li>
                             <li><Link to="/login" className='loginLink'>Login</Link></li>
                         </ul>
             </section>
