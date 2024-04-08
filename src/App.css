@@ -257,4 +257,13 @@
     font-size: 18px;
     color: var(--grey);
 }
-/* } */
+
+#makeAReservation {
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  color: var(--yellow);
+  font-size: 58px;
+  font-family: var(--font-family-markazi);
+  margin-bottom: 0px;
+}

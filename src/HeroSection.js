@@ -1,13 +1,13 @@
 import foodPhoto from "./media/restauranfood.jpg"
 import './App.css';
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
     let navigate = useNavigate();
     function handleSubmit(e) {
         e.preventDefault();
-        navigate("/reservations")
+        navigate("/reservations");
     }
 
     return (

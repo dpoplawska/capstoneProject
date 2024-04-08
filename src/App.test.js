@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import BookingForm from './components/BookingForm.js';
+import { TimeOptionsProvider } from './TimeOptionsContext.js';
+import BookingPage from './BookingPage.js';
+import HeroSection from './HeroSection.js';
+import TestimonialsSection from './TestimonialsSection.js';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('Renders the BookingForm button', () => {
+    render(<TestimonialsSection />);
+    const button = screen.getByText("Diana");
+    expect(button).toBeInTheDocument();
+})
